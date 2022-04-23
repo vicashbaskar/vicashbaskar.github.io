@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid red;
+        }
+
+        th {
+            background-color: aqua;
+            color: white;
+        }
+
+        td {
+            background-color: blanchedalmond;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buttons"></div>
+    <table>
+        <thead id="heading"></thead>
+        <tbody id="body"></tbody>
+    </table>
+
+    <script>
+        var pageData = [
+            { 'name': 'xxxx', age: 22, gender: 'yyy', language: 'tamil' },
+            { 'name': 'xxxx', age: 23, gender: 'yyy', language: 'tamil' },
+            { 'name': 'xxxx', age: 24, gender: 'yyy', language: 'tamil' },
+            { 'name': 'xxxx', age: 25, gender: 'yyy', language: 'tamil' },
+            { 'name': 'xxxx', age: 26, gender: 'yyy', language: 'tamil' },
+            { 'name': 'xxxx', age: 27, gender: 'yyy', language: 'tamil' },
+        ]
+
+        function generateHead(data) {
+            return '<th>' + data + '</th>';
+        }
+        function generateData(data) {
+            return '<td>' + data + '</td>';
+        }
+        function generateRow(data) {
+            return '<tr>' + data + '</tr>';
+        }
+        function generateButton(data) {
+            return '<button>' + data + '</button>';
+        }
+
+        function displayRow(data) {
+            // let data = { 'name': 'xxxx', age: 22, gender: 'yyy' };
+            let heading = Object.keys(data);
+            let diplayEachRow = heading.map(eachKey => generateData(data[eachKey])).join('')
+            console.log(diplayEachRow);
+            return generateRow(diplayEachRow);
+        }
+        // displayRow();
+
+        function displayBody() {
+            let displayEachBody = pageData.map(eachRow => displayRow(eachRow)).join('')
+            console.log(displayEachBody);
+            document.getElementById('body').innerHTML = displayEachBody;
+        }
+        displayBody();
+
+        function displayHeading() {
+            let headings = Object.keys(pageData[0]);
+            let displayHead = headings.map(eachHead => generateHead(eachHead)).join('');
+            console.log(displayHead);
+            document.getElementById('heading').innerHTML = displayHead;
+        }
+        displayHeading();
+    </script>
+</body>
+
+</html>
+

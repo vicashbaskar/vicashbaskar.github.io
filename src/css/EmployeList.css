@@ -1,0 +1,42 @@
+.card {
+    width: 200px;
+    display: inline-block;
+    border-radius: 5px;
+    border: rgb(7, 158, 40) solid 2px;
+    background-color: rgb(65, 19, 170);
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+.card:hover {
+    transform: scaleY(1.1);
+}
+
+
+.name {
+    font-style: oblique;
+    font-size: 20px;
+    color: rgb(246, 250, 253);
+    padding-left: 8px;
+}
+
+.button {
+
+    float: right;
+    border-radius: 5px;
+    background-color: rgb(155, 211, 104);
+    margin-right: 8px;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.button:hover{
+    background-color: brown;
+    color: white;
+}
+
+.idno {
+    font-size: 25px;
+    margin-left: 5px;
+}

@@ -1,0 +1,10 @@
+.react-container{
+    position: relative;
+    text-align: center;
+}
+.react-js{
+    position: absolute;
+    font-size: 60px;
+    top: 10px;
+    left: 41%;
+}

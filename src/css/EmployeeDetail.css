@@ -1,0 +1,78 @@
+.list {
+    text-align: center;
+}
+
+.card1 {
+    border: black solid 2px;
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(7, 117, 145);
+    color: white;
+}
+
+.card1:hover {
+    transform: scaleY(1.1);
+}
+
+.card1 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.employeelist-link {
+    background-color: aquamarine;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+
+}
+
+
+.info-Table {
+    /* width: 100%; */
+    margin: auto;
+    overflow-x: auto;
+    border-spacing: 0;
+}
+
+.info-Table table {
+    border: 2px solid rgb(17, 17, 17);
+    border-collapse: collapse;
+    color: rgb(250, 253, 253);
+    background-color: rgb(25, 127, 185);
+
+}
+
+.info-Table tr {
+    border: 2px solid rgb(17, 17, 17);
+    text-align: left;
+
+}
+
+.info-Table th {
+    width: 250px;
+    min-width: 120px;
+    border: 2px solid rgb(15, 12, 12);
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+.info-Table td {
+    width: 450px;
+    min-width: 400px;
+
+    border: 2px solid rgb(22, 3, 3);
+    border-collapse: collapse;
+    /* padding: 10px; */
+
+}
+
+
+.space {
+    margin-top: 40px;
+}

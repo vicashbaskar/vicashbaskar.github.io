@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        /* body {
+            position: absolute;
+            left: 0%;
+            text-align: center;
+        } */
+        
+        h2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        button {
+            width: 90px;
+            height: 50px;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        .counter {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            height: 100%;
+        }
+        
+        #Number {
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Increment and Decrement counter</h2>
+    <div class="counter">
+        <button onclick="increment()">+</button>
+        <h1 id="Number"></h1>
+        <button onclick="decrement()">-</button>
+    </div>
+</body>
+<script>
+    var data = 0;
+    document.getElementById("Number").innerHTML = data;
+
+    function increment() {
+        data += 1;
+        document.getElementById("Number").innerHTML = data;
+    }
+
+    function decrement() {
+        data -= 1;
+        document.getElementById("Number").innerHTML = data;
+    }
+</script>
+
+</html>
