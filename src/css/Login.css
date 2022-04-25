@@ -8,6 +8,8 @@
     margin-top: 9%;
     background-color: rgb(38, 168, 125);
     padding: 25px;
+    width: 30%;
+    min-width: 300px;
     
 }
 
@@ -20,7 +22,8 @@
 }
 
 .login-inputbox{
-    padding:6px 70px;
+    padding:6px;
+    width: 100%;
     text-align: center;
     font-size: 18px;
 }
@@ -31,7 +34,8 @@
 .login-submit  {
     background-color: rgb(31, 61, 160);
     border-radius: 15px;
-    padding: 8px 158px;
+    padding: 8px ;
     color: white;
-    font-size: 15px;   
+    font-size: 15px;  
+    width: 100%; 
 } 

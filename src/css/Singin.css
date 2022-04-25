@@ -1,7 +1,8 @@
 .signin-page {
-    display: inline-block;
     padding: 10px;
-    margin:auto ;
+    width: 300px;
+    margin: auto;
+
 
 }
 
@@ -16,14 +17,15 @@
     border-radius: 5px 10px;
     padding: 20px;
     background-color: rgb(60, 197, 186);
+    text-align: center;
     
 }
-.signin-form{
-    color: aquamarine;
-}
+
 
 label {
     color: black;
+    float: left;
+    padding-left: 20px;
 }
 
 #input {

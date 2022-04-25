@@ -20,7 +20,7 @@ export class MainComponent extends React.Component {
         return (
             <div>
                 <Routes>
-                    <Route path="/Home" element={<Home />} />
+                    <Route  exact path="/Home" element={<Home />} />
                     <Route path="/EmployeeList" element={<EmployeeList />} />
                     <Route path="/EmployeeDetail" element={<EmployeeDetail />} />
                     <Route path="/Pagination" element={<Pagination />} />
